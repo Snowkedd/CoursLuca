@@ -5,7 +5,8 @@ ages = []
 heights = []
 weights = []
 
-def add_new_patient (name, age, height, weight):
+
+def add_new_patient(name, age, height, weight):
     names.append(name)
     ages.append(age)
     heights.append(height)
@@ -15,7 +16,7 @@ def add_new_patient (name, age, height, weight):
 # TODO 2) Faire une fonction qui donne le min, le max et la moyenne d'une des métriques précédentes
 #  (sauf le nom)
 
-def statistics (metric):
+def statistics(metric):
     print("Number of metrics ", len(metric))
     print("Min: ", min(metric))
     print("Max: ", max(metric))
@@ -23,12 +24,13 @@ def statistics (metric):
 
 
 # TODO 3) Faire une fonction qui supprime un client (toutes ses infos)
-def remove_patient (name):
+def remove_patient(name):
     id_patient = names.index(name)
     names.pop(id_patient)
     ages.pop(id_patient)
     heights.pop(id_patient)
     weights.pop(id_patient)
+
 
 add_new_patient("Maxim", 26, 177, 80)
 add_new_patient("Charline", 22, 153, 50)
