@@ -7,3 +7,14 @@
 
 
 # TODO 3) Faire une fonction qui supprime un client (toutes ses infos)
+
+
+panier_de_fruits = []
+
+def ajouter_un_fruit(panier_de_fruits, un_fruit):
+    panier_de_fruits.append(un_fruit)
+    return panier_de_fruits
+
+print(panier_de_fruits)
+panier_de_fruits= ajouter_un_fruit(panier_de_fruits, "Orange")
+print(panier_de_fruits)
